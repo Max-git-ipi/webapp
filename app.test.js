@@ -1,4 +1,9 @@
 const calcul = require('./app');
+
 test('adds 1 + 2 to equal 3', () => {
   expect(calcul(1, 2)).toBe(3);
+});
+
+test('adds 15 + 5 to equal 20 (branche if a > 10)', () => {
+  expect(calcul(15, 5)).toBe(20);
 });
